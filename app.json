@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/map/map",
+    "pages/more/more",
+    "pages/logs/logs",
+    "pages/index/index",
+    "pages/around/around",
+    "pages/posts/posts",
+    "pages/postDetail/pistDetail",
+    "pages/moves/moves",
+    "pages/moves/move-detail/move-detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2a579a",
+    "navigationBarTitleText": "WeChat-demo",
+    "navigationBarTextStyle": "#fff",
+    "backgroundColor": "#eee"
+  },
+  "tabBar": {
+    "position": "top",
+    "backgroundColor": "#2a579a",
+    "color": "#DCEDC8",
+    "selectedColor": "#DCEDC8",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "主页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-selected.png"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "text": "周边"
+      },
+      {
+        "pagePath": "pages/more/more",
+        "text": "更多"
+      },
+      {
+        "pagePath": "pages/moves/moves",
+        "text": "电影",
+        "iconPath": "images/person-add.png",
+        "selectedIconPath": "images/person-add-selected.png"
+      },
+      {
+        "pagePath": "pages/posts/posts",
+        "text": "新闻列表",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-selected.png"
+      }
+    ]
+  }
+}

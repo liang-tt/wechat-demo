@@ -1,0 +1,6 @@
+
+<view class='moves-list-wrap'>
+  <block  wx:for="{{moves}}">
+    <move move="{{item}}"></move>
+  </block>
+</view>

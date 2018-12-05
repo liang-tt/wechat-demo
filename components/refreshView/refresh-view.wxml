@@ -1,0 +1,3 @@
+<view class='loading-wrap' style='margin-top:{{scrollHeight}}px;transform:translateY(-50px);' bindtouchstart='start' bindtouchmove='move' bindtouchend='end'>
+
+</view>

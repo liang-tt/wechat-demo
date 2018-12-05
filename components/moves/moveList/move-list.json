@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "move": "/components/moves/move/move"
+  }
+}

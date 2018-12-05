@@ -1,0 +1,28 @@
+/* pages/map/map.wxss */
+.navContainer {
+  margin: 20rpx 10rpx;
+  display: flex;
+  justify-content: space-around;
+   text-align: center;
+}
+.icon-image {
+  width: 100rpx;
+  height: 100rpx;
+  margin:20rpx 60rpx 0;
+}
+.icon-text {
+  color: #666;
+  font-size: 28rpx;
+}
+.active {
+  border: 1rpx solid #2a579a;
+  border-radius: 8rpx;
+}
+.mapContainer {
+  height:700rpx;
+  margin: 0 10rpx;
+}
+.map {
+  width: 100%;
+  height: 100%;
+}

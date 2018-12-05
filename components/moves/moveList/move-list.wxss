@@ -1,0 +1,7 @@
+/* components/moves/moveList/move-list.wxss */
+.moves-list-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

@@ -1,0 +1,16 @@
+.stars-wrap {
+  display: flex;
+  flex-direction: row;
+}
+.stars {
+  display: flex;
+  flex-direction: row;
+  height: 17rpx;
+}
+.stars image{
+  width: 17rpx;
+  height: 17rpx;
+}
+.star-score {
+  font-size: 18rpx;
+}

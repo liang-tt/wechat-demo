@@ -1,0 +1,10 @@
+<!--pages/map/map.wxml-->
+<view class='navContainer'>
+  <view wx:for='{{IconLists}}' class='switchTap {{active==index?"active": ""}}' bindtap='switchTap' data-index='{{index}}' data-title='{{item.title}}'>
+    <image class='icon-image' src='{{item.icon}}'></image>
+    <view class='icon-text'>{{item.title}}</view>
+  </view>
+</view>
+<view class='mapContainer'>
+<map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" show-location="true" markers="{{markers}}"></map> 
+</view>

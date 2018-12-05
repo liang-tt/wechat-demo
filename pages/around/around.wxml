@@ -1,0 +1,31 @@
+<!--pages/around/around.wxml-->
+<view>
+  <!-- 输入框 -->
+  <view class='inputContainer'>
+    <input value='{{search}}' placeholder='请输入城市名或拼音查询' class='searchInput' placeholder-class='searchPlace'></input>
+  </view>
+  <scroll-view scroll-y='{{true}}' class='serachContainer'>
+    <view>4354354353454353543543gfffffffffffffffffffffffffffffffffffffffffffffff</view>
+    <view wx:for='{{searchList}}'>{{item.letter}}</view>
+  </scroll-view>
+</view>
+
+<view class='contentLetter'>
+  <!-- 右侧首字母 -->
+  <view class='letterContainer'>
+    <view wx:for='{{cityLetter}}' class='letter' bindtap='bindAZ' data-view='{{item}}'>{{item}}</view>
+    <view class='returnTop' bindtap='returnTop'>
+      <view>顶部</view>
+      <view>↑↑</view>
+    </view>
+  </view>
+
+  <view class='cityList'>
+    <scroll-view scroll-y='true' style='height: {{winHeight}}px' scroll-top='{{scrollTop}}' scroll-into-view='{{toView}}'>
+      <view wx:for='{{cityList}}' id='{{item.letter}}'>
+        <view class='cityLetter'>{{item.letter}}</view>
+        <view class='cityTitle' wx:for ='{{item.cityInfo}}' wx:for-item='city'>{{city.city}}</view>
+      </view>
+    </scroll-view> 
+  </view>
+</view>

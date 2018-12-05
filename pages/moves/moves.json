@@ -1,0 +1,7 @@
+{
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "move-list": "/components/moves/moveList/move-list",
+    "move": "/components/moves/move/move"
+  }
+}

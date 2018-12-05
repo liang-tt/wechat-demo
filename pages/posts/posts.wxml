@@ -1,0 +1,35 @@
+<!--pages/posts/posts.wxml-->
+<view>
+  <swiper indicator-dots="{{indicatorDots}}" circular="{{circular}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>  
+        <image src="{{item}}" class="slide-image" width="355" height="150"/>
+        </swiper-item>
+    </block>
+  </swiper>
+
+  <view class='posts-list'>
+    <view class='post-container' wx:for="{{postList}}">
+      <view class='post-auther-date'>
+        <image class='post-auther' src='{{item.headImg}}'></image>
+        <text class='post-date'>{{item.date}}</text>
+      </view>
+      <view class='post-image-wrap'>
+        <image class='post-image' src='{{item.contentImg}}'></image>
+        <image src="{{isPlaying && item.id === playingId  ? '/images/icon/pause.png' : '/images/icon/music.png'}}" class='music {{isPlaying ? "rotation" : ""}}' catchtap='audioFunc' data-post="{{item}}"></image>
+        <!-- <image src="{{item.id === playingId ? '/images/icon/pause.png' : '/images/icon/music.png'}}" class='music' catchtap='audioFunc' data-post="{{item}}"></image> -->
+      </view>
+      <text class='post-content'>{{item.content}}</text>
+      <view >
+        <view class='post-like'>
+          <image class='post-like-icon' src='/images/icon/star.png'></image>
+          <text class='post-like-font'>12</text>
+        </view>
+        <view class='post-like'>
+          
+        </view>
+        <button open-type="share" class='share-btn'><image class='post-like-icon' src='/images/icon/chat.png'></image></button>
+      </view>
+    </view>
+  </view>
+</view>

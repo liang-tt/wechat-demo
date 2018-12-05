@@ -1,0 +1,90 @@
+/* pages/posts/posts.wxss */
+page {
+  background-color: #eee;
+}
+swiper {
+  width: 100%;
+  height: 380rpx;
+}
+swiper image {
+  width: 100%;
+  height: 100%;
+}
+
+.post-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin: 20rpx 0;
+}
+.post-auther-date {
+  margin: 10rpx;
+  /* height: 90rpx; */
+}
+.post-auther{
+  width: 80rpx;
+  height: 80rpx;
+  vertical-align: middle;
+}
+.post-date {
+  margin-left: 20rpx;
+  font-size: 28rpx;
+  vertical-align: middle;
+}
+.post-image-wrap {
+  position: relative;
+}
+.post-image {
+  width: 100%;
+  height: 340rpx;
+}
+.music {
+  width: 96rpx;
+  height: 96rpx;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.post-content {
+  font-size: 28rpx;
+  letter-spacing: 2rpx;
+  color: #666;
+  margin: 20rpx;
+  line-height: 40rpx;
+}
+.post-like {
+  flex-direction: row;
+  margin: 0 20rpx 20rpx 20rpx;
+  line-height: 16px;
+}
+.post-like-icon {
+  width: 28rpx;
+  height: 28rpx;
+  vertical-align: middle;
+}
+.post-like-font {
+  font-size: 26rpx;
+  color: #666;
+  vertical-align: middle;
+  margin-left: 16rpx;
+}
+
+.rotation {
+  transform: rotate(360deg);
+  animation: rotation 12s linear infinite;
+}
+
+.share-btn {
+  width: 20px;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(360deg)
+  }
+}
+

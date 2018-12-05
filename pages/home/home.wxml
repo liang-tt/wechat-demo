@@ -1,0 +1,19 @@
+<!-- <refresh-view style='height:100%;'></refresh-view> -->
+<swiper indicator-dots="{{indicatorDots}}" circular="{{circular}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>  
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+      </swiper-item>
+  </block>
+</swiper>
+<view class='content'>
+  <text>当前位置: </text>
+  <view class='currentPosition'>{{location}}{{county}}</view>
+  <view class='currentPosition changePotion' bindtap='changePotion'>更改定位</view>
+  <view class='weatherContainer'>
+    <view class='district-date'>{{location}}({{today}})</view>
+    <view class='temp'>{{weatherData.now.tmp}}℃</view>
+    <view class='weather-detail'>{{weatherData.now.cond_txt}} {{weatherData.now.wind_dir}}</view>
+    <view>{{weatherData.lifestyle[0].txt}}</view>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+<import src="../../../template/moves/stars/stars.wxml"></import>
+<view class="move-wrap" bindtap='moveDetail' data-move="{{move.title}}">
+  <image src="{{move.images.small}}" class='move-img'></image>
+  <text class="move-title">{{move.title}}</text>
+  <template is="starsTemplate"></template>
+</view>
